@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('tabler::layouts.app')
 
-{{-- @section('page-title', 'Home') --}}
+@section('page-title', 'Home')
 
 @section('content')
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-8">
             @component('tabler::components.panel', [
                 'title' => 'Welcome',
             ])
