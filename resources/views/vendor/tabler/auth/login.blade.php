@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col col-login mx-auto">
                     <div class="text-center mb-6">
-                        <img src="{{ url('images/tabler.svg') }}" class="h-6" alt="">
+                        <img src="{{ url('images/tukio.png') }}" class="h-6" alt="">
                     </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
