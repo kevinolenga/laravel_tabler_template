@@ -6,10 +6,13 @@
         <div class="container">
             <div class="row">
                 <div class="col col-login mx-auto">
-                    <div class="text-center mb-6">
-                        <img src="{{ url('images/tukio.png') }}" class="h-6" alt="">
-                    </div>
+                    
                     <form class="card" method="POST" action="{{ route('login') }}">
+                        <br>
+                        <div class="text-center mb-6">
+                            <img src="{{ url('images/tukio.png') }}" class="h-6" alt=""><br><br>
+                            <span>Effectuez vos achats de biens et services sur Internet depuis votre téléphone mobile sur tous les sites acceptant ob paycash.</span>
+                        </div>
                         @csrf
 
                         <div class="card-body p-6">
@@ -18,7 +21,7 @@
                                 <label class="form-label">{{ __('E-Mail Address') }}</label>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror

@@ -6,14 +6,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-login mx-auto">
-                        <div class="text-center mb-6">
-                            <img src="{{ url('images/tukio.png') }}" class="h-6" alt="">
-                        </div>
                         <form class="card" method="POST" action="{{ route('register') }}">
-                            @csrf
-
+                            <br>
+                            <div class="text-center mb-6" style="text-align:justify">
+                                <img src="{{ url('images/tukio.png') }}" class="h-6" alt=""><br><br>
+                                <span >Effectuez vos achats de biens et services sur Internet depuis votre téléphone mobile sur tous les sites acceptant <b>ob paycash</b>.</span>
+                            </div>
+                                @csrf
                             <div class="card-body p-6">
-                                <div class="card-title">Create new account</div>
                                 <div class="form-group">
                                     <label for="name" class="form-label">{{ __('Name') }}</label>
                                     <input id="name" type="text"
